@@ -36,7 +36,7 @@ For details, please refer to our paper \[link to paper].
 - `test_data/`: Contains CSV files with test data for evaluating model performance.
     - `dis` vs. `rnd`: the HighVar and Random subset (details see paper)
 - `train_data/`: training data for ModernBERT / DeBERTa fine-tuning.
-- `llm_generations\`: LLM Generations in our experiments. Users of this repo may want to analyze them directly without run all 100+ sets of LLM inference on their own.
+- `llm_generations.zip`: **LLM Generations in our experiments. Users of this repo may want to analyze them directly without run all 100+ sets of LLM inference on their own.**
     - `deepseek_v3_r1_few_shot/`: LLM generations for DeepSeek models in few-shot settings.
     - `deepseek_v3_r1_zero_shot/`: LLM generations for DeepSeek models in zero-shot settings.
     - `other_models_few_shot_sampled_distribution/`: Generations from other models (few-shot, sampled distribution).
