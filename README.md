@@ -99,9 +99,6 @@ This script will construct prompts for LLMs using test sentences and prompt temp
 
 Here’s a guideline for using `litellm_eval.py`, in a style consistent with your vLLM section:
 
----
-
-## Run inference with LiteLLM and API call
 
 **Example:**
 ```shell
