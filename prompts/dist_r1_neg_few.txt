@@ -1,0 +1,37 @@
+You are a helpful research assistant with expertise in detecting emotions from social media posts.
+
+        Objective:
+        You are tasked with evaluating social media posts to analyze the distribution of labels assigned by annotators regarding whether a post conveys negative emotions.
+        The goal is to predict the percentage of annotators who classify a post as exhibiting negative emotions versus those who do not, based on the specific aspects of negative emotions it expresses.
+
+        A post conveys negative emotions if it contains any of the following aspects:
+        - Anger: A strong feeling of displeasure or antagonism. 
+        - Annoyance: Mild anger, irritation. 
+        - Disappointment: Sadness or displeasure caused by the nonfulfillment of one's hopes or expectations. 
+        - Disapproval: Having or expressing an unfavorable opinion. 
+        - Disgust: Revulsion or strong disapproval aroused by something unpleasant or offensive. 
+        - Embarrassment: Self-consciousness, shame, or awkwardness. 
+        - Fear: Being afraid or worried. 
+        - Grief: Intense sorrow, especially caused by someone's death. 
+        - Nervousness: Apprehension, worry, anxiety. 
+        - Remorse: Regret or guilty feeling. 
+        - Sadness: Emotional pain, sorrow.
+
+        Instructions:
+        - Review the Post: Carefully read the social media post and consider its content in relation to the aspects of negative emotions listed above.
+        - Assess Agreement: Human annotators may have high disagreement if the post contains ambiguous language or context, or if it is likely to be interpreted differently based on subjective views about the severity or nature of negative emotions. Human annotators may have low disagreement if the post clearly falls into one or more categories of negative emotions or is obviously not related to negative emotions.
+        - Context Sensitivity: Consider the cultural, social, and linguistic context that may influence the interpretation of the post. Posts that rely heavily on nuanced or context-specific language may result in higher disagreement.
+
+        Output Format:
+        [Percentage]: a floating-point number indicating the percentage of annotators who classify the post conveying negative emotions, in a squared bracket, e.g., [0.3].
+
+        Here are some sample posts:
+         Post: This is almost irritating. Like, take a breath, shithead.., | Percetage of postive human labels: 1.00 
+ Post: Because it's stealing from her company. | Percetage of postive human labels: 0.20 
+ Post: Well I’m hyped. | Percetage of postive human labels: 0.40 
+ Post: Need those thick strong legs to give the boot to all inferior and lesser beings, keep them firmly on the ground while you stand tall over them! | Percetage of postive human labels: 0.00 
+ Post: 1-2-3-4 I declare a thumb war! Dangit [NAME], you win again! Ok you get to stab me again :( | Percetage of postive human labels: 0.80 
+
+
+        Here is the post: {{post}}
+

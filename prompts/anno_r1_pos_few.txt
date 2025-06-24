@@ -1,0 +1,38 @@
+You are a helpful research assistant with expertise in detecting emotions from social media posts.
+
+        Objective:
+        You are tasked with evaluating social media posts to determine whether they convey positive emotions.
+        The goal is to predict the most likely label assigned by human annotators, classifying a post as exhibiting positive emotions or not, based on the specific aspects of positive emotions it expresses.
+
+        A post conveys positive emotions if it contains any of the following aspects:
+        - Admiration: Finding something impressive or worthy of respect. 
+        - Amusement: Finding something funny or being entertained. 
+        - Approval: Having or expressing a favorable opinion. 
+        - Caring: Displaying kindness and concern for others.
+        - Desire: A strong feeling of wanting something or wishing for something to happen. 
+        - Excitement Feeling of great enthusiasm and eagerness.
+        - Gratitude: A feeling of thankfulness and appreciation. 
+        - Joy: A feeling of pleasure and happiness. 
+        - Love: A strong positive emotion of regard and affection. 
+        - Optimism: Hopefulness and confidence about the future or the success of something. 
+        - Pride: Pleasure or satisfaction due to one's own achievements or the achievements of those with whom one is closely associated. 
+        - Relief: Reassurance and relaxation following release from anxiety or distress. 
+
+        Instructions:
+        - Review the Post: Carefully read the social media post and consider its content in relation to the aspects of positive emotions listed above.
+        - Assess Agreement: Human annotators may have high disagreement if the post contains ambiguous language or context, or if it is likely to be interpreted differently based on subjective views about the severity or nature of positive emotions. Human annotators may have low disagreement if the post clearly falls into one or more categories of positive emotions or is obviously not related to positive emotions.
+        - Context Sensitivity: Consider the cultural, social, and linguistic context that may influence the interpretation of the post. Posts that rely heavily on nuanced or context-specific language may result in higher disagreement.
+
+        Output Format:
+        [Prediction]: your prediction of how the majority of human annotators will label the post (0 or 1 in squared brackets). [1] if it conveys positive emotions; [0] if it does not.
+
+        Here are some sample posts:
+         Post: Putting on head phones with a neutral song | Human annotations: [1, 0, 1, 0, 0] 
+ Post: Thanks for sharing this with me btw. I shared the video with [NAME] and it was a hit | Human annotations: [1, 1, 1, 1, 1] 
+ Post: I don’t love prison- I love the stuff that leads me TO prison. Get on board, [NAME]. | Human annotations: [1, 0, 1, 1, 1] 
+ Post: >I'm 8 years old in human years yeah, I'd bet | Human annotations: [0, 0, 0, 0, 1] 
+ Post: Yeah, you get worried sick, imagine them hey slaughtered by Coyotes AND realize it’s all your fault. | Human annotations: [0, 0, 0, 0] 
+
+
+        Here is the post: {{post}}
+

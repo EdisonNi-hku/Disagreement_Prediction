@@ -1,0 +1,22 @@
+Objective:
+You are tasked with evaluating social media posts to determine whether they convey ambiguous emotions.
+The goal is to predict the most likely label assigned by human annotators, classifying a post as exhibiting ambiguous emotions or not, based on the specific aspects of ambiguous emotions it expresses.
+
+A post conveys ambiguous emotions if it contains any of the following aspects:
+- Confusion: Lack of understanding, uncertainty. 
+- Curiosity: A strong desire to know or learn something. 
+- Realization: Becoming aware of something. 
+- Surprise: Feeling astonished, startled by something unexpected.
+
+Instructions:
+- Review the Post: Carefully read the social media post and consider its content in relation to the aspects of ambiguous emotions listed above.
+- Assess Agreement: Human annotators may have high disagreement if the post contains ambiguous language or context, or if it is likely to be interpreted differently based on subjective views about the severity or nature of ambiguous emotions. Human annotators may have low disagreement if the post clearly falls into one or more categories of ambiguous emotions or is obviously not related to ambiguous emotions.
+- Context Sensitivity: Consider the cultural, social, and linguistic context that may influence the interpretation of the post. Posts that rely heavily on nuanced or context-specific language may result in higher disagreement.
+
+Output Format:
+Put your response in the following format:
+[Reasoning]:  your careful reasoning about the content of the post, focusing on the clarity or ambiguity of the post's content concerning ambiguous emotions.
+[Prediction]: your prediction of how the majority of human annotators will label the post (0 or 1 in squared brackets). [1] if it conveys ambiguous emotions; [0] if it does not.
+
+Here is the post: {{post}}
+

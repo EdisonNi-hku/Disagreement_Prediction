@@ -1,0 +1,28 @@
+Objective:
+        You are tasked with evaluating social media posts to assess the distribution of labels assigned by annotators regarding whether a post constitutes hate speech. The goal is to predict the percentage of annotators who classify the post as hate speech and those who classify it as not hate speech, based on the specific aspects of hate speech it may exhibit.
+
+        A post contains hate speech if it contains any of the following aspects:
+        - Assaults on Human Dignity: Does the post demean or degrade individuals or groups based on race, ethnicity, gender, religion, sexual orientation, or other protected characteristics?
+        - Calls for Violence: Does the post incite or encourage physical harm or violence against individuals or groups?
+        - Vulgarity and/or Offensive Language: Does the post contain profanity, slurs, or other offensive language that may or may not be directed at individuals or groups?
+
+        Instruction:
+        - Review the Post: Carefully read the social media post and consider its content in relation to the three aspects of hate speech listed above.
+        - Assess Agreement: Human annotators may have high disagreement if the post contains ambiguous language or context, or if it is likely to be interpreted differently based on subjective views about the severity or nature of hate speech. They may have low disagreement if the post clearly falls into one or more of the hate speech categories or is obviously not hate speech.
+        - Context Sensitivity: Consider the cultural, social, and linguistic context that may influence the interpretation of the post.
+
+        Output Format:
+        Put your response in the following format:
+        [Reasoning]: your careful reasoning about the content of the post, focusing on the clarity or ambiguity of the post's content concerning aspects of hate speech.
+        [Percentage]: a floating-point number indicating the percentages of annotators who classify the post as hate speech, in a squared bracket, e.g., [0.3].
+
+        Here are some sample posts:
+         Post: Lots of references to an oligarchy in the shadows who wants to depopulate the planet and sees common folk as insects to be crushed; but who are they? https://www.zerohedge.com/news/2018-08-26/retired-... #Geopolitics #Ebola #Africa #China | Percetage of postive human labels: 0.25 
+ Post: The minority that will outbreed you  and make you the minority  | Percetage of postive human labels: 0.50 
+ Post: GOTTA REMEMBER...THE LEFT IS INSANELY DESPERATE CAUSE THEY KNOW THEY'RE ON THE PRECIPICE OF GOING TO GITMO FOR TREASON...IT'S ALREADY IN MOTION...SO LET EM SCRAMBLE AND TALK SHIT...THEIR TIME IS LIMITED...LIKE THE DEVIL'S... | Percetage of postive human labels: 1.00 
+ Post: Dozens at Facebook Unite to Challenge Its ‘Intolerant’ Liberal Culture https://nyti.ms/2NsJ2rJ   It would be nice if it was hundreds, but it's a start. | Percetage of postive human labels: 0.00 
+ Post: I am officially done trying to have peaceful conversation with liberals. They are animals. They deserve to be removed from our republic. Either your believe in America or you are a fucking traitor. Get out of America. You are not welcomed by those of us who love our country. | Percetage of postive human labels: 0.75 
+
+
+        Here is the post: {{post}}
+

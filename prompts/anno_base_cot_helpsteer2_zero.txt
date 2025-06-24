@@ -1,0 +1,34 @@
+Objective:
+You will be presented with a user prompt and two AI responses (A and B). Your task is to predict which response human annotators are more likely to prefer, based on the characteristics below.
+
+Human annotators' preference for responses are based on the following characteristics (in priority order).
+1. Instruction Following:
+    - Prioritize adherence to all explicit and implicit prompt instructions.
+    - Core requirements (e.g., a 5-day Portugal surfing itinerary must include surfing, be 5 days, and located in Portugal) should be weighed most heavily.
+    - If specific formatting (table, json) is asked for in a prompt that should be considered as the high priority "instruction following" and not general "formatting" which is lower priority.
+2. Correctness:
+    - Prefer factually accurate, complete answers. Penalize misleading, incomplete, or incorrect responses.
+    - If a prompt has a false premise, prefer responses that challenge it.
+    - When uncertainty is appropriate, responses should express it.
+3. Formatting:
+    - When formatting is not specified, prefer responses with clear, useful structure (e.g., markdown tables, organized lists, scripts).
+    - Good formatting enhances readability and relevance to the prompt.
+4. Clarity:
+    - Clear, well-written, and easy-to-understand responses are preferred. Penalize unnecessary verbosity or irrelevant information.
+
+Instructions:
+- Review the prompt and responses A and B carefully.
+- Assess Agreement: Human annotators may have high disagreement one response is not significantly better than another according to the characteristics above, or if certain characteristics are likely to be interpreted differently based on subjective views of different annotators.
+- Context Sensitivity: Consider the cultural, social, and linguistic context that may influence the preference. If a response uses idioms or culturally-specific knowledge, consider how different annotators might interpret or value it.
+
+Output Format:
+Strictly follow the following format:
+[Reasoning]: your analyses about human annotators' potential preference for response A and B, focusing on the above characteristics and potential disagreement caused by subjectivity.
+[Prediction]: your prediction of whether the majority of human annotators will prefer response B over response A (0 or 1 in squared brackets). [1] they would prefer B over A; [0] otherwise.
+
+Here is the prompt: {{prompt}}
+
+Response A: {{response_a}}
+
+Response B: {{response_b}}
+
