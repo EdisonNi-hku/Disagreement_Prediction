@@ -164,3 +164,13 @@ This script trains ModernBERT on train_data/ghc_train.csv and evaluate it on Hig
 **Paper citation**:
 
 ```
+@misc{ni2025largelanguagemodelscapture,
+      title={Can Large Language Models Capture Human Annotator Disagreements?}, 
+      author={Jingwei Ni and Yu Fan and Vilém Zouhar and Donya Rooein and Alexander Hoyle and Mrinmaya Sachan and Markus Leippold and Dirk Hovy and Elliott Ash},
+      year={2025},
+      eprint={2506.19467},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.19467}, 
+}
+```
