@@ -1,4 +1,4 @@
-# Can Large Language Models Capture Human Annotator Disagreements? [![Paper](:scroll:)](https://arxiv.org/abs/2506.19467)
+# Can Large Language Models Capture Human Annotator Disagreements? [![Paper]:scroll:](https://arxiv.org/abs/2506.19467)
 
 This repository provides code and data accompanying our research paper exploring how Large Language Models (LLMs) capture human annotation disagreements, an often overlooked yet informative aspect of NLP annotation tasks.
 
