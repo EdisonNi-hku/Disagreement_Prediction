@@ -1,4 +1,4 @@
-# Can Large Language Models Capture Human Annotator Disagreements? [![Paper](https://img.shields.io/badge/%F0%9F%93%9C%20paper-481.svg)](https://arxiv.org/abs/2506.19467)
+# Can Reasoning Help Large Language Models Capture Human Annotator Disagreement?
 
 This repository provides code and data accompanying our research paper exploring how Large Language Models (LLMs) capture human annotation disagreements, an often overlooked yet informative aspect of NLP annotation tasks.
 
@@ -164,13 +164,5 @@ This script trains ModernBERT on train_data/ghc_train.csv and evaluate it on Hig
 **Paper citation**:
 
 ```
-@misc{ni2025largelanguagemodelscapture,
-      title={Can Large Language Models Capture Human Annotator Disagreements?}, 
-      author={Jingwei Ni and Yu Fan and Vilém Zouhar and Donya Rooein and Alexander Hoyle and Mrinmaya Sachan and Markus Leippold and Dirk Hovy and Elliott Ash},
-      year={2025},
-      eprint={2506.19467},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.19467}, 
-}
+Anonymized for review
 ```
